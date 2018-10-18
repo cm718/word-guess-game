@@ -6,6 +6,8 @@ $(document).ready(function() {
   var wins = 0;
   var guess = "";
   var answerArray = [];
+  var word = "";
+  var guessedLetters = [];
   var words = [
     "WHIP",
     "HAT",
@@ -17,13 +19,13 @@ $(document).ready(function() {
     "ARTIFACTS",
     "MARION",
     "SNAKES",
+    "BOULDER",
+    "DOOM",
+    "COVENANT",
     "INDIANA",
     "MUSEUM",
     "JONES"
   ];
-  var word = "";
-  var guessedLetters = [];
-
 
 // ************************************************************
 
@@ -55,7 +57,7 @@ $(document).ready(function() {
       // matches any of the letters in the "word" varialbe.
       if (word[j] === guess) {
         answerArray[j] = guess;
-      } 
+      }
     }
     // Adds the correct letter at the correct index of the array
     $("#answerArray").text(answerArray.join(" "));
