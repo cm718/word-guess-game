@@ -15,18 +15,12 @@ button {
   padding: 10px;
   border-radius: 5px;
   font-size: 1em;
-  background-color: #662206;
-  border: #663306;
-  color: white;
-  margin-top: 20px;
-}
-
-button:hover {
   background-color: #800;
+  border: #800;
+  color: white;
 }
 
 button:focus {
   outline-color: transparent;
   outline-style: none;
-  background-color: #900;
 }
