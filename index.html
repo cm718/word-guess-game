@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <title>Hangman Game</title>
 </head>
+
 <body>
-  <h1>EVERYONE'S FAVORITE ARCHAEOLOGIST</h1>
+  <div id="main">
+    <h1>EVERYONE'S FAVORITE ARCHAEOLOGIST</h1>
 
-  <h1>Choose a letter: <span id="answerArray"></span></h1>
+    <h1>Choose a letter: <span id="answerArray"></span></h1>
 
-  <h2>Wins: <span id="wins">0</span></h2>
+    <h2>Wins: <span id="wins">0</span></h2>
 
-  <h2>You have guessed: <span id="guessedLetters"></span></h2>
+    <h2>You have guessed: <span id="guessedLetters"></span></h2>
+
+    <button id="playAgain">Play Again?</button>
+  </div>
 
   <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
