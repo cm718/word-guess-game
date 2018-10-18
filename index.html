@@ -13,17 +13,23 @@
 <body>
   <div id="main">
     <h1>EVERYONE'S FAVORITE ARCHAEOLOGIST</h1>
-
+    <h3>Press any key to get started</h3>
     <h1>Choose a letter: <span id="answerArray"></span></h1>
 
     <h2>Wins: <span id="wins">0</span></h2>
+    <h2>Losses: <span id="losses">0</span></h2>
 
-    <h2>You have guessed: <span id="guessedLetters"></span></h2>
+    <h2>Letters you've guessed: <span id="guessedLetters"></span></h2>
+    <h2>Number of guesses remaining: <span id="remaining">12</span></h2>
+    <div class="winner">
+      <h2>You won!</h2>
+      <h1 id="response"></h1>
+      <button id="playAgain">Play Again?</button>
+    </div>
 
-  <div class="winner">
-    <h2>You won!</h2>
-    <button id="playAgain">Play Again?</button>
-  </div>
+    <div class="loser">
+      <h1 id="loser"></h1>
+    </div>
 
   </div>
 
