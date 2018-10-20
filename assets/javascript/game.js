@@ -8,6 +8,7 @@ $(document).ready(function() {
   var answerArray = [];
   var word = "";
   var guessedLetters = [];
+  var gameOver = false;
   var words = [
     "WHIP",
     "HAT",
@@ -46,26 +47,30 @@ $(document).ready(function() {
 
   // Setting the users guess to their key click
   $(this).on("keypress", function() {
-    //transforming it to upper case
-    guess = event.key.toUpperCase();
-    // Runs the function guessLetter();
-    guessLetter();
-    // Checks to see if answerArray is equal to the chosen word.
-    if (answerArray.toString().replace(/,/g, "") == word) {
-      // If the user wins increase the win score
-      wins = wins + 1;
-      $("#wins").text(wins);
-      $(".winner").css("display", "block");
-    } else {
-      remaining = remaining - 1;
-      $("#remaining").text(remaining);
+    if (!gameOver){
+      //transforming it to upper case
+      guess = event.key.toUpperCase();
+      // Runs the function guessLetter();
+      guessLetter();
+      // Checks to see if answerArray is equal to the chosen word.
+      if (answerArray.toString().replace(/,/g, "") == word) {
+        // If the user wins increase the win score
+        wins = wins + 1;
+        $("#wins").text(wins);
+        $(".winner").css("display", "block");
+        gameOver = true;
+      } else {
+        remaining = remaining - 1;
+        $("#remaining").text(remaining);
+      }
+      if (remaining < 1) {
+        losses = losses + 1;
+        $("#losses").text(losses);
+        $(".loser").css("display", "block");
+        gameOver = true;
+      }
     }
-    if (remaining < 1) {
-      losses = losses + 1;
-      $("#losses").text(losses);
-      $(".loser").css("display", "block");
-      // $(this).off("keypress");
-    }
+
   });
 
   // ************************************************************
@@ -95,7 +100,7 @@ $(document).ready(function() {
   // Declare a function to call when I want the game to reset
   function newGame() {
     // // Turn keypress back on
-    // $(this).on("keypress");
+    gameOver = false;
     // Pick a new funny response for the end of the game.
     response = responses[Math.floor(Math.random() * responses.length)];
     // Reset the remaining letter count
