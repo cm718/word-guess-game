@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One');
+
 body {
   background-color: black;
   color: white;
   background: url("../images/Indiana-Jones-bw.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Carter One", serif;
 }
 
 
