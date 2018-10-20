@@ -33,6 +33,7 @@ $(document).ready(function() {
     "Don't look at the ark!",
     "Don't forget your hat!",
     "Just the right amount of sand!",
+    "But in the latin...Jehovah begins with an 'I'.",
     "Outrun that boulder!",
     "We named the dog Indiana!",
     "He chose...poorly.",
