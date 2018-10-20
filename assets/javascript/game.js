@@ -19,6 +19,7 @@ $(document).ready(function() {
     "ARTIFACTS",
     "MARION",
     "SNAKES",
+    "RELIC",
     "BOULDER",
     "DOOM",
     "COVENANT",
@@ -28,11 +29,13 @@ $(document).ready(function() {
     "JONES"
   ];
   var responses = [
-    "Good job! Now run, the bridge is breaking!",
-    "Just the right amount of sand!",
     "Don't look at the ark!",
     "Don't forget your hat!",
+    "Just the right amount of sand!",
     "Outrun that boulder!",
+    "We named the dog Indiana!",
+    "He chose...poorly.",
+    "Good job! Now run, the bridge is breaking!",
     "They're digging in the wrong place!",
     "These belong in a museum!",
     "Snakes...why did it have to be snakes?",
@@ -60,6 +63,8 @@ $(document).ready(function() {
     if (remaining < 1) {
       losses = losses + 1;
       $("#losses").text(losses);
+      $(".loser").css("display", "block");
+      // $(this).off("keypress");
     }
   });
 
@@ -89,12 +94,16 @@ $(document).ready(function() {
 
   // Declare a function to call when I want the game to reset
   function newGame() {
+    // // Turn keypress back on
+    // $(this).on("keypress");
     // Pick a new funny response for the end of the game.
     response = responses[Math.floor(Math.random() * responses.length)];
     // Reset the remaining letter count
-    remaining = 12;
+    remaining = 15;
     // Reset the html for remaining guesses
     $("#remaining").text(remaining);
+    // Hide the loss text
+    $(".loser").css("display", "none");
     // Hide the button and the winner text
     $(".winner").css("display", "none");
     // For each new game I want to reset the array of user guessed letters
@@ -121,6 +130,7 @@ $(document).ready(function() {
 
   // Setting the instructions for the Play Again button to run newGame();
   $("#playAgain").on("click", newGame);
+  $("#again").on("click", newGame);
 
   // calling the newGame function so the game starts
   newGame();

@@ -21,12 +21,25 @@ button {
   margin: 10px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 button:focus {
   outline-color: transparent;
   outline-style: none;
 }
 
 .winner {
+  padding: 5px;
+  background-color: #333;
+  color: white;
+  width: 30%;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.loser {
   padding: 5px;
   background-color: #333;
   color: white;
