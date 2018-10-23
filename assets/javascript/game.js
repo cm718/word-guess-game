@@ -52,6 +52,7 @@ $(document).ready(function() {
       //transforming it to upper case
       guess = event.key.toUpperCase();
       // Runs the function guessLetter();
+      if (guessedLetters.indexOf(guess) < 0) {
       guessLetter();
       // Checks to see if answerArray is equal to the chosen word.
       if (answerArray.toString().replace(/,/g, "") == word) {
@@ -71,7 +72,7 @@ $(document).ready(function() {
         gameOver = true;
       }
     }
-
+  }
   });
 
   // ************************************************************
