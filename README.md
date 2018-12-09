@@ -6,7 +6,7 @@ This is a project from my Coding Boot Camp at Northwestern University. Please do
 
 Email: cmmclaughlin7@gmail.com
 
-# This homework is an Indiana Jones themed hangman game.
+# This is an Indiana Jones themed hangman game.
 
 I tried to find a similar font to display the text in an Indiana Jones theme. I also chose an array of words that are taken from key moments and lines from the movies.
 
