@@ -26,6 +26,5 @@ They tally of wins and losses is stored on the page until the page is refreshed.
 
 ### Please enjoy hangman themed with pieces from everyone's favorite archaeologist.
 
-### To contact me with questions about the game you can email me at: cmmclaughlin7@gmail.com
+### To contact me with questions about the game or about working together on a project you can email me at: cmmclaughlin7@gmail.com
 
-## To find more of my work visit [my GitHub account](github.com/cm718). 
