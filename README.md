@@ -1,4 +1,4 @@
-# word-guess-game
+# Indiana Jones Hangman
 
 Here is the link: https://cm718.github.io/word-guess-game/
 
