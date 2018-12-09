@@ -1,5 +1,10 @@
 # word-guess-game
-Homework for week three
+
+Here is the link: https://cm718.github.io/word-guess-game/
+
+This is a project from my Coding Boot Camp at Northwestern University. Please don't hesitate to let me know if you have questions about the code or would like to reach out to me about working together.
+
+Email: cmmclaughlin7@gmail.com
 
 # This homework is an Indiana Jones themed hangman game.
 
